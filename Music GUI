@@ -34,7 +34,7 @@ musicBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 musicBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
 musicBtn.Size = UDim2.new(0, 118, 0, 45)
 musicBtn.Position = UDim2.new(0, 6, 0, 35)
-musicBtn.Text = "Beautiful Nasheed"
+musicBtn.Text = "Trillium"
 musicBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 musicBtn.Parent = frame
 
@@ -46,7 +46,7 @@ volumeBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 volumeBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
 volumeBtn.Size = UDim2.new(0, 118, 0, 45)
 volumeBtn.Position = UDim2.new(0, 126, 0, 35)
-volumeBtn.Text = "Volume Inf (might be useless)"
+volumeBtn.Text = "Volume Inf"
 volumeBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 volumeBtn.Parent = frame
 
@@ -70,7 +70,7 @@ music3Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music3Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
 music3Btn.Size = UDim2.new(0, 236, 0, 45)
 music3Btn.Position = UDim2.new(0, 6, 0, 145)
-music3Btn.Text = "life in elevator"
+music3Btn.Text = "no escape"
 music3Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music3Btn.Parent = frame
 
@@ -82,7 +82,7 @@ music4Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music4Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
 music4Btn.Size = UDim2.new(0, 236, 0, 45)
 music4Btn.Position = UDim2.new(0, 6, 0, 200)
-music4Btn.Text = "phonk✌️💔"
+music4Btn.Text = "chill"
 music4Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music4Btn.Parent = frame
 
@@ -103,7 +103,7 @@ dragDetector.Parent = frame
 
 musicBtn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
-    requestCommand:InvokeServer(";music 247893371 ;volume inf")
+    requestCommand:InvokeServer(";music 125713216100553 ;volume inf")
 end)
 
 volumeBtn.MouseButton1Click:Connect(function()
@@ -113,20 +113,20 @@ end)
 
 music2Btn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
-    requestCommand:InvokeServer(";music 1847661821")
+    requestCommand:InvokeServer(";music 1847661821 ;volume inf")
 end)
 
 music3Btn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
-    requestCommand:InvokeServer(";music 1841647093 ;volume inf")
+    requestCommand:InvokeServer(";music 18841891575 ;volume inf ;pitch 0.6")
 end)
 
 music4Btn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
-    requestCommand:InvokeServer(";music 71782154359434")
+    requestCommand:InvokeServer(";music 1845341094 ;volume inf")
 end)
 
 music5Btn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
-    requestCommand:InvokeServer(";music 35930009")
+    requestCommand:InvokeServer(";music 35930009 ;volume inf")
 end)
