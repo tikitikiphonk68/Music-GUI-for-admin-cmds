@@ -11,8 +11,8 @@ screenGui.Parent = playerGui
 local frame = Instance.new("Frame")
 frame.BorderSizePixel = 3
 frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-frame.Size = UDim2.new(0, 250, 0, 310)
-frame.Position = UDim2.new(0.5, -125, 0.5, -155)
+frame.Size = UDim2.new(0, 378, 0, 310)
+frame.Position = UDim2.new(0.5, -189, 0.5, -155)
 frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 frame.Parent = screenGui
 
@@ -50,13 +50,26 @@ volumeBtn.Text = "Volume Inf"
 volumeBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 volumeBtn.Parent = frame
 
+-- NEW BUTTON - Top right side
+local newMusicBtn = Instance.new("TextButton")
+newMusicBtn.BorderSizePixel = 3
+newMusicBtn.TextSize = 16
+newMusicBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+newMusicBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+newMusicBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
+newMusicBtn.Size = UDim2.new(0, 118, 0, 45)
+newMusicBtn.Position = UDim2.new(0, 246, 0, 35)
+newMusicBtn.Text = "New Track"
+newMusicBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+newMusicBtn.Parent = frame
+
 local music2Btn = Instance.new("TextButton")
 music2Btn.BorderSizePixel = 3
 music2Btn.TextSize = 16
 music2Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music2Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music2Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music2Btn.Size = UDim2.new(0, 236, 0, 45)
+music2Btn.Size = UDim2.new(0, 364, 0, 45)
 music2Btn.Position = UDim2.new(0, 6, 0, 90)
 music2Btn.Text = "Wont stop us c"
 music2Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -68,7 +81,7 @@ music3Btn.TextSize = 16
 music3Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music3Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music3Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music3Btn.Size = UDim2.new(0, 236, 0, 45)
+music3Btn.Size = UDim2.new(0, 364, 0, 45)
 music3Btn.Position = UDim2.new(0, 6, 0, 145)
 music3Btn.Text = "no escape"
 music3Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -80,7 +93,7 @@ music4Btn.TextSize = 16
 music4Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music4Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music4Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music4Btn.Size = UDim2.new(0, 236, 0, 45)
+music4Btn.Size = UDim2.new(0, 364, 0, 45)
 music4Btn.Position = UDim2.new(0, 6, 0, 200)
 music4Btn.Text = "chill"
 music4Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -92,7 +105,7 @@ music5Btn.TextSize = 16
 music5Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music5Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music5Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music5Btn.Size = UDim2.new(0, 236, 0, 45)
+music5Btn.Size = UDim2.new(0, 364, 0, 45)
 music5Btn.Position = UDim2.new(0, 6, 0, 255)
 music5Btn.Text = "2017 ahh roblox"
 music5Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -109,6 +122,12 @@ end)
 volumeBtn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
     requestCommand:InvokeServer(";volume inf")
+end)
+
+-- NEW BUTTON CONNECTION
+newMusicBtn.MouseButton1Click:Connect(function()
+    local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
+    requestCommand:InvokeServer(";music 79062800010762 ;volume inf")
 end)
 
 music2Btn.MouseButton1Click:Connect(function()
