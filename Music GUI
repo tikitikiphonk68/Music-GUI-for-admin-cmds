@@ -6,107 +6,121 @@ local playerGui = player:WaitForChild("PlayerGui")
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "MusicGUI"
 screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+screenGui.ResetOnSpawn = false
 screenGui.Parent = playerGui
 
 local frame = Instance.new("Frame")
 frame.BorderSizePixel = 3
 frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-frame.Size = UDim2.new(0, 378, 0, 310)
-frame.Position = UDim2.new(0.5, -189, 0.5, -155)
+frame.Size = UDim2.new(0, 320, 0, 255)
+frame.Position = UDim2.new(0.5, -160, 0.5, -127)
 frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 frame.Parent = screenGui
 
 local title = Instance.new("TextLabel")
 title.BorderSizePixel = 0
-title.TextSize = 20
+title.TextSize = 18
 title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 title.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold)
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.Size = UDim2.new(1, 0, 0, 30)
+title.Size = UDim2.new(1, 0, 0, 26)
 title.Text = "Music GUI by naçhl0ap"
 title.Parent = frame
 
 local musicBtn = Instance.new("TextButton")
 musicBtn.BorderSizePixel = 3
-musicBtn.TextSize = 16
+musicBtn.TextSize = 14
 musicBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 musicBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 musicBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-musicBtn.Size = UDim2.new(0, 118, 0, 45)
-musicBtn.Position = UDim2.new(0, 6, 0, 35)
+musicBtn.Size = UDim2.new(0, 74, 0, 38)
+musicBtn.Position = UDim2.new(0, 6, 0, 32)
 musicBtn.Text = "Trillium"
 musicBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 musicBtn.Parent = frame
 
 local volumeBtn = Instance.new("TextButton")
 volumeBtn.BorderSizePixel = 3
-volumeBtn.TextSize = 16
+volumeBtn.TextSize = 14
 volumeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 volumeBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 volumeBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-volumeBtn.Size = UDim2.new(0, 118, 0, 45)
-volumeBtn.Position = UDim2.new(0, 126, 0, 35)
+volumeBtn.Size = UDim2.new(0, 74, 0, 38)
+volumeBtn.Position = UDim2.new(0, 84, 0, 32)
 volumeBtn.Text = "low cortisol"
 volumeBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 volumeBtn.Parent = frame
 
--- NEW BUTTON - Top right side
-local newMusicBtn = Instance.new("TextButton")
-newMusicBtn.BorderSizePixel = 3
-newMusicBtn.TextSize = 16
-newMusicBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-newMusicBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-newMusicBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-newMusicBtn.Size = UDim2.new(0, 118, 0, 45)
-newMusicBtn.Position = UDim2.new(0, 246, 0, 35)
-newMusicBtn.Text = "fortnite✌️💔"
-newMusicBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
-newMusicBtn.Parent = frame
+-- fortnite button
+local fortniteBtn = Instance.new("TextButton")
+fortniteBtn.BorderSizePixel = 3
+fortniteBtn.TextSize = 14
+fortniteBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+fortniteBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+fortniteBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
+fortniteBtn.Size = UDim2.new(0, 74, 0, 38)
+fortniteBtn.Position = UDim2.new(0, 162, 0, 32)
+fortniteBtn.Text = "fortnite✌️💔"
+fortniteBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+fortniteBtn.Parent = frame
+
+-- NEW BUTTON right next to fortnite
+local newBtn = Instance.new("TextButton")
+newBtn.BorderSizePixel = 3
+newBtn.TextSize = 14
+newBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+newBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+newBtn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
+newBtn.Size = UDim2.new(0, 74, 0, 38)
+newBtn.Position = UDim2.new(0, 240, 0, 32)
+newBtn.Text = "raining men"
+newBtn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+newBtn.Parent = frame
 
 local music2Btn = Instance.new("TextButton")
 music2Btn.BorderSizePixel = 3
-music2Btn.TextSize = 16
+music2Btn.TextSize = 14
 music2Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music2Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music2Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music2Btn.Size = UDim2.new(0, 364, 0, 45)
-music2Btn.Position = UDim2.new(0, 6, 0, 90)
+music2Btn.Size = UDim2.new(0, 308, 0, 38)
+music2Btn.Position = UDim2.new(0, 6, 0, 76)
 music2Btn.Text = "Wont stop us c"
 music2Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music2Btn.Parent = frame
 
 local music3Btn = Instance.new("TextButton")
 music3Btn.BorderSizePixel = 3
-music3Btn.TextSize = 16
+music3Btn.TextSize = 14
 music3Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music3Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music3Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music3Btn.Size = UDim2.new(0, 364, 0, 45)
-music3Btn.Position = UDim2.new(0, 6, 0, 145)
+music3Btn.Size = UDim2.new(0, 308, 0, 38)
+music3Btn.Position = UDim2.new(0, 6, 0, 120)
 music3Btn.Text = "no escape"
 music3Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music3Btn.Parent = frame
 
 local music4Btn = Instance.new("TextButton")
 music4Btn.BorderSizePixel = 3
-music4Btn.TextSize = 16
+music4Btn.TextSize = 14
 music4Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music4Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music4Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music4Btn.Size = UDim2.new(0, 364, 0, 45)
-music4Btn.Position = UDim2.new(0, 6, 0, 200)
+music4Btn.Size = UDim2.new(0, 308, 0, 38)
+music4Btn.Position = UDim2.new(0, 6, 0, 164)
 music4Btn.Text = "young girl a"
 music4Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music4Btn.Parent = frame
 
 local music5Btn = Instance.new("TextButton")
 music5Btn.BorderSizePixel = 3
-music5Btn.TextSize = 16
+music5Btn.TextSize = 14
 music5Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 music5Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 music5Btn.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular)
-music5Btn.Size = UDim2.new(0, 364, 0, 45)
-music5Btn.Position = UDim2.new(0, 6, 0, 255)
+music5Btn.Size = UDim2.new(0, 308, 0, 38)
+music5Btn.Position = UDim2.new(0, 6, 0, 208)
 music5Btn.Text = "2017 ahh roblox"
 music5Btn.BorderColor3 = Color3.fromRGB(255, 255, 255)
 music5Btn.Parent = frame
@@ -124,10 +138,15 @@ volumeBtn.MouseButton1Click:Connect(function()
     requestCommand:InvokeServer(";music 110919391228823 ;volume inf")
 end)
 
--- NEW BUTTON CONNECTION
-newMusicBtn.MouseButton1Click:Connect(function()
+fortniteBtn.MouseButton1Click:Connect(function()
     local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
     requestCommand:InvokeServer(";music 79062800010762 ;volume inf")
+end)
+
+-- NEW button connection
+newBtn.MouseButton1Click:Connect(function()
+    local requestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals:WaitForChild("RequestCommandSilent")
+    requestCommand:InvokeServer(";music 79999206651848 ;volume inf ;pitch 0.22")
 end)
 
 music2Btn.MouseButton1Click:Connect(function()
